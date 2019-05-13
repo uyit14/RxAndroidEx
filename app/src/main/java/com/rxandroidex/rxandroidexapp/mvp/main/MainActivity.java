@@ -79,7 +79,7 @@ public class MainActivity extends AppCompatActivity implements IView.View {
             }
         });
 
-        // white background notification bar
+        // white background notification bar.
         whiteNotificationBar(fab);
 
 
