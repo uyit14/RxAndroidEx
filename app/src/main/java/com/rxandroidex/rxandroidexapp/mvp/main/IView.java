@@ -24,7 +24,7 @@ public interface IView {
         void deleteNoteFail(Throwable e);
     }
     interface Presenter{
-        void requetsGetNotes();
+        void requestGetNotes();
         void requestRegisterUser();
         void requestCreateNote(String note);
         void requestUpdateNote(int noteId, final String note, final int position);

@@ -20,7 +20,7 @@ import io.reactivex.schedulers.Schedulers;
 
 public class Presenter implements IView.Presenter{
     private final IView.View mNotesView;
-    private ApiService apiService = ApiClient.getClient(BaseApplication.getInstance()).create(ApiService.class);;
+    private ApiService apiService = ApiClient.getClient(BaseApplication.getInstance()).create(ApiService.class);
     private CompositeDisposable disposable = new CompositeDisposable();
 
     public Presenter(IView.View mNotesView) {
@@ -28,7 +28,7 @@ public class Presenter implements IView.Presenter{
     }
 
     @Override
-    public void requetsGetNotes() {
+    public void requestGetNotes() {
         disposable.add(
                 apiService.fetchAllNotes()
                         .subscribeOn(Schedulers.io())

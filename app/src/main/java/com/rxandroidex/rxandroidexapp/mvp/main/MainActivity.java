@@ -116,7 +116,7 @@ public class MainActivity extends AppCompatActivity implements IView.View {
         if (TextUtils.isEmpty(PrefUtils.getApiKey(this))) {
             presenter.requestRegisterUser();
         } else {
-            presenter.requetsGetNotes();
+            presenter.requestGetNotes();
         }
     }
 
